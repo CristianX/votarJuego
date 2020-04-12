@@ -7,6 +7,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - `npm install @swimlane/ngx-charts --save`
 - `npm install @angular/cdk`
 - Sweet Alert 2 `npm install sweetalert2`
+- Angular fire `ng add @angular/fire@next`
+- Firebase `npm install firebase @angular/fire`
 
 ## Development server
 

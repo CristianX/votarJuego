@@ -1,4 +1,4 @@
-import { Component, OnDestroy } from '@angular/core';
+import { Component, OnDestroy, Input } from '@angular/core';
 
 @Component({
   selector: 'app-grafico-barra-horizontal',
@@ -7,7 +7,10 @@ import { Component, OnDestroy } from '@angular/core';
 })
 export class GraficoBarraHorizontalComponent implements OnDestroy  {
 
-  results: any[] = [
+  // Para recibir los datos
+  @Input() results: any[] = [];
+
+ /* results: any[] = [
     {
       name: 'Juego 1',
       value: 20
@@ -24,7 +27,7 @@ export class GraficoBarraHorizontalComponent implements OnDestroy  {
       name: 'Juego 4',
       value: 30
     }
-  ];
+  ]; */
 
 
   // options
@@ -40,20 +43,20 @@ export class GraficoBarraHorizontalComponent implements OnDestroy  {
   colorScheme = 'nightLights';
 
   // Para destruir el ciclo for al cerrar la página
-  intervalo: any;
+  // intervalo: any;
 
   constructor() {
     // La documentación de ngx-charts recomienda reemplazar todos los valores del objeto results
-    const newResults = [ ...this.results ];
+   // const newResults = [ ...this.results ];
     // Para llamar en un intervalo de tiempo, 1500 es ese intervalo
-    this.intervalo = setInterval( () => {
-      console.log('tick');
+   // this.intervalo = setInterval( () => {
+     // console.log('tick');
       // tslint:disable-next-line: forin
-      for ( let i in newResults ) {
-        newResults[i].value = Math.round( Math.random() * 500 );
-      }
-      this.results = [ ...newResults ];
-    }, 1500 );
+     // for ( let i in newResults ) {
+      //  newResults[i].value = Math.round( Math.random() * 500 );
+     // }
+     // this.results = [ ...newResults ];
+   // }, 1500 );
   }
 
   onSelect(event) {
@@ -62,7 +65,7 @@ export class GraficoBarraHorizontalComponent implements OnDestroy  {
 
   // Para destruir el ciclo for cuando se cierre la pantalla
   ngOnDestroy() {
-    clearInterval( this.intervalo );
+   // clearInterval( this.intervalo );
   }
 
 }

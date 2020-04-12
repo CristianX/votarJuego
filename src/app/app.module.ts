@@ -9,6 +9,8 @@ import { GotyComponent } from './pages/goty/goty.component';
 // Módulo personalizado
 import { ComponentsModule } from './components/components.module';
 
+// Peticiones Http
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { ComponentsModule } from './components/components.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ComponentsModule
+    ComponentsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -6,6 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 - `npm install @swimlane/ngx-charts --save`
 - `npm install @angular/cdk`
+- Sweet Alert 2 `npm install sweetalert2`
 
 ## Development server
 

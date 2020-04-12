@@ -10,6 +10,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - Angular fire `ng add @angular/fire@next`
 - Firebase `npm install firebase @angular/fire`
 
+## Url de la App
+- https://firestore-grafica-6feb1.web.app
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
